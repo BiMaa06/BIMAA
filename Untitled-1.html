@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - YouTube Channel</title>
+    <link rel="icon" type="image/x-icon" href="icon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="bg-blob blob1"></div>
+        <div class="bg-blob blob2"></div>
+        <div class="bg-blob blob3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="brand">BIMAA</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><button class="nav-btn active" data-page="home">
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                    </svg>
+                    Home
+                </button></li>
+                <li><button class="nav-btn" data-page="youtube">
+                    <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                    YouTube
+                </button></li>
+                <li><button class="nav-btn" data-page="posts">
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    Posts
+                </button></li>
+                <li><button class="nav-btn" data-page="contact">
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    Contact
+                </button></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <div class="page active" id="home">
+            <div class="container">
+                <div class="home-content">
+                    <div class="profile-section">
+                        <div class="profile-wrapper">
+                            <div class="profile-glow"></div>
+                            <div class="profile-image">
+                                <img src="BiMaa.png" alt="Profile">
+                            </div>
+                            <div class="yt-badge">
+                                <svg class="icon-lg" fill="currentColor" viewBox="0 0 24 24" style="color: white;">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-section">
+                        <h1 class="greeting">ආයුබෝවන්</h1>
+                        <h2 class="name">I'm <span>Bimsara Lakshan</span></h2>
+                        <p class="subtitle">Content Creator & YouTuber</p>
+                        <p class="description">
+                            I am a YouTube content creator. My channel provides you with various tutorials, tips, and entertainment content. Join my journey and let's grow together! 🚀
+                        </p>
+                        <div class="btn-group">
+                            <button class="btn btn-primary" onclick="navigateTo('youtube')">Watch Videos</button>
+                            <button class="btn btn-secondary" onclick="navigateTo('contact')">Contact Me</button>
+                        </div>
+                        <div class="stats">
+                            <div class="stat-card">
+                                <div class="stat-number">128</div>
+                                <div class="stat-label">Subscribers</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">15</div>
+                                <div class="stat-label">Videos</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">3K+</div>
+                                <div class="stat-label">Views</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="about-me-section">
+                <h2 class="section-title" style="background: linear-gradient(135deg, #3b82f6, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">ABOUT ME</h2>
+                <div class="about-me-content">
+                    <div class="about-image">
+                        <img src="my.jpg" alt="About Me Photo">
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            මම Bimsara, Sri Lanka වලින් YouTube content creator කෙනෙක්. 
+                            මගේ passion එක තමයි creative videos හරහා knowledge සහ inspiration 
+                            එකතු කරන්න. මම tech tutorials, lifestyle vlogs සහ motivational content 
+                            create කරනවා. ඔයාලගේ support එකෙන් මගේ dream එක reality කරන්න 
+                            හැමදාමත් motivated වෙනවා!
+                        </p>
+                        <p>
+                            මගේ goal එක තමයි viewers ලාට value එකක් ලබාදෙන්න. 
+                            අපි එකට ඉගෙන ගනිමු, inspire වෙමු, සහ grow වෙමු! ❤️
+                        </p>
+                    </div>
+                </div>
+            </div>
+			
+            </div>
+        </div>
+		
+
+        <!-- YouTube Page -->
+        <div class="page" id="youtube">
+            <div class="container">
+                <div class="page-header">
+                    <h2 class="page-title">My YouTube Videos</h2>
+                    <p class="page-subtitle">මගේ නවතම සහ ජනප්‍රිය වීඩියෝ බලන්න</p>
+                </div>
+                <div class="video-grid">
+				    <div class="video-card">
+					    <iframe width="403" height="335" src="https://www.youtube.com/embed/RLY3RHtRrrI">
+                        </iframe>
+						
+					    <div class="video-info">
+                            <h3 class="video-title">නවතම වීඩියෝව - Tutorial Part 1</h3>
+                            <div class="video-meta">
+                                <span>10K views</span>
+                                <span>1 week ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+					<div class="video-card">
+                        <div class="video-thumbnail" data-video-id="hUtJiShBKkg&t">
+                            <img src="https://i9.ytimg.com/vi_webp/hUtJiShBKkg/mqdefault.webp?v=67a5b781&sqp=CID56MYG&rs=AOn4CLBQPLCuc6FdVYTLcAFRfczXSLMjcw" alt="Video">
+                            <div class="play-overlay">
+                                <div class="play-button" onclick="playVideo(this)">
+                                    <div class="play-icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">නවතම වීඩියෝව - Tutorial Part 1</h3>
+                            <div class="video-meta">
+                                <span>10K views</span>
+                                <span>1 week ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumbnail" data-video-id="dQw4w9WgXcQ">
+                            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Video">
+                            <div class="play-overlay">
+                                <div class="play-button" onclick="playVideo(this)">
+                                    <div class="play-icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">How to Create Content</h3>
+                            <div class="video-meta">
+                                <span>25K views</span>
+                                <span>2 weeks ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumbnail" data-video-id="dQw4w9WgXcQ">
+                            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Video">
+                            <div class="play-overlay">
+                                <div class="play-button" onclick="playVideo(this)">
+                                    <div class="play-icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Behind the Scenes</h3>
+                            <div class="video-meta">
+                                <span>15K views</span>
+                                <span>3 weeks ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumbnail" data-video-id="dQw4w9WgXcQ">
+                            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Video">
+                            <div class="play-overlay">
+                                <div class="play-button" onclick="playVideo(this)">
+                                    <div class="play-icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Tips and Tricks</h3>
+                            <div class="video-meta">
+                                <span>30K views</span>
+                                <span>1 month ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <a href="https://youtube.com/@yourchannel" target="_blank" class="channel-btn">
+                        <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                        Visit My Channel
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Posts Page -->
+		<div class="page" id="posts">
+        <div class="container">
+        <div class="page-header">
+            <h2 class="page-title">My Posts</h2>
+            <p class="page-subtitle">Tips, tutorials සහ experiences share කරමු</p>
+        </div>
+        <div class="posts-grid">
+            <article class="post-card" data-index="0">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800" alt="YouTube Post">
+                    <div class="post-gradient"></div>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span>📅 2025-09-20</span>
+                        <span>👤 Your Name</span>
+                    </div>
+                    <h3 class="post-title">YouTube චැනලය වර්ධනය කරගන්නේ කොහොමද?</h3>
+                    <p class="post-excerpt">
+                        YouTube චැනලයක් වර්ධනය කරගන්න හොඳම උපක්‍රම සහ ක්‍රමවේද ගැන සවිස්තරාත්මක ගයිඩ් එකක්...
+                    </p>
+                    <a href="#" class="read-more">
+                        Read More
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            <article class="post-card" data-index="1">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800" alt="Content Creation Post">
+                    <div class="post-gradient"></div>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span>📅 2025-09-15</span>
+                        <span>👤 Your Name</span>
+                    </div>
+                    <h3 class="post-title">Content Creation Tips</h3>
+                    <p class="post-excerpt">
+                        Quality content හදන්න ඕන මූලික කරුණු සහ creative ideas බලමු...
+                    </p>
+                    <a href="#" class="read-more">
+                        Read More
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            <article class="post-card" data-index="2">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800" alt="Video Editing Post">
+                    <div class="post-gradient"></div>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span>📅 2025-09-10</span>
+                        <span>👤 Your Name</span>
+                    </div>
+                    <h3 class="post-title">Video Editing Basics</h3>
+                    <p class="post-excerpt">
+                        Professional video editing කරන්න පටන් ගන්නේ කොහොමද කියලා step by step බලමු...
+                    </p>
+                    <a href="#" class="read-more">
+                        Read More
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="modal" id="postModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img id="modalImage" src="" alt="Post">
+                <button class="close-btn" id="closeBtn">×</button>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <div class="modal-meta">
+                    <span id="modalDate"></span>
+                    <span id="modalAuthor"></span>
+                </div>
+                <div class="modal-text" id="modalContent"></div>
+            </div>
+        </div>
+      </div>
+	</div>
+
+
+        <!-- Contact Page -->
+        <!-- Contact Section -->
+<div class="page" id="contact">
+  <div class="container contact-container">
+    <div class="page-header">
+      <h2 class="page-title" style="background: linear-gradient(135deg, #3b82f6, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+        Contact Me
+      </h2>
+      <p class="page-subtitle">ඔබට මාව සම්බන්ධ කර ගන්න පුළුවන්</p>
+    </div>
+    <div class="contact-form">  
+      <form id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Name*</label>
+            <input type="text" class="form-input" placeholder="Your Name" name="user_name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email*</label>
+            <input type="email" class="form-input" placeholder="your@email.com" name="user_email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Subject</label>
+          <input type="text" class="form-input" placeholder="Message Subject" name="subject">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message*</label>
+          <textarea class="form-textarea" placeholder="Your message here..." name="message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">
+          <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+          </svg>
+          Send Message
+        </button>
+      </form>
+
+      <div class="social-section">
+        <p class="social-text">සමාජ මාධ්‍ය හරහාත් සම්බන්ධ වෙන්න</p>
+        <div class="social-links">
+          <a href="#" class="social-link">
+            <svg class="icon" fill="currentColor" viewBox="0 0 24 24" style="color: #ef4444;">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #a855f7;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  // Initialize EmailJS
+  (function() {
+    emailjs.init("FgRvyy7v8aMLzCQkK"); // 🔑 EmailJS Public Key
+  })();
+
+  // Form Submit Handler
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_7hwu9i6", "template_agt2vcg", this)
+      .then(() => {
+        alert("✅ Message Sent Successfully!");
+        document.getElementById("contactForm").reset();
+      }, (error) => {
+        alert("❌ Failed to send: " + JSON.stringify(error));
+      });
+  });
+</script>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025-BiMaa. Made with ❤️ by <span>Bimsara Lakshan</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("FgRvyy7v8aMLzCQkK"); // <-- මෙතන ඔයාගේ Public Key දාන්න
+  })();
+</script>
+
+</body>
+</html>
